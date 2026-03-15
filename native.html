@@ -1,0 +1,28 @@
+<html>
+<body>
+
+<script>
+
+try {
+
+    var data = "POC Test";
+
+    var encoded = btoa(data);
+
+    AndroidInterface.sendFile(
+        encoded,
+        "../app_pccache/5/FF9F46C837651603405478A94323CFF15475179C/test.txt",
+        "text/plain"
+    );
+
+    alert("File written");
+
+} catch(e) {
+
+    alert("Error: " + e);
+
+}
+
+</script>
+
+</body>
